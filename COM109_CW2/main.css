@@ -1,13 +1,20 @@
 h1.LOGO-MAIN {
     color: rgb(255,255,255);
-    size: 50px;
+    size: 200px;
     text-align: center;
 }
 
 
 div.Header {
     background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
-    height: 15%;
+    height: 150px;
     width: 100%;
-    padding: 30%;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body {
+    margin: 0%;
 }
