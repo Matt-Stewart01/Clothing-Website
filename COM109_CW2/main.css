@@ -35,6 +35,7 @@ div.Tab-item-container {
     height: 100%;
     width: 50%;
     float: inline-start;
+
 }
 
 div.Tab-item {
@@ -42,8 +43,6 @@ div.Tab-item {
     height: 100%;
     width: 30%;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
 }
 
 div.Tab-extra {
