@@ -15,6 +15,12 @@ div.Header {
     display: flex;
 }
 
+div.Tab-bar {
+    background-color: rgb(255,255,255);
+    height: 100px;
+    width: 100%;
+}
+
 body {
     margin: 0%;
 }
