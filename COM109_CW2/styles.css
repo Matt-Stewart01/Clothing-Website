@@ -1,0 +1,32 @@
+h1.LOGO-MAIN {
+    color: rgb(255,255,255);
+    size: 200px;
+    text-align: center;
+}
+
+div.Header {
+    height: 150px;
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body {
+    margin: 0%;
+    background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
+    background-size: 100vw 100vh;
+}
+
+#Sign-Up_Form {
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+#title_choice {
+    font-weight: 1000;
+}
