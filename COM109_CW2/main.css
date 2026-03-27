@@ -23,30 +23,27 @@ div.Tab-bar {
     border-bottom: 2px solid rgb(17, 17, 17);
 }
 
-div.Search-bar {
-    background-color: rgb(124, 53, 53);
-    height: 100%;
-    width: 25%;
-    display: flex; 
-    justify-content: left;
-}
-
 .tab-item-container {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #f1f1f1;
-  padding: 10px;
+  background-color: rgb(red, green, blue);
+  height: 70px
 }
 
 .tab-item {
   padding: 10px 20px;
   cursor: pointer;
   border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-item:hover {
   border-bottom: 2px solid rgb(245,208,47);
+  background-color: rgb(245,208,47);
+  transition: 0.3s;
 }
 
 .tab-item2 {
