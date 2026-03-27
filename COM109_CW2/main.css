@@ -27,29 +27,35 @@ div.Search-bar {
     background-color: rgb(124, 53, 53);
     height: 100%;
     width: 25%;
-    float: left;
+    display: flex; 
+    justify-content: left;
 }
 
-div.Tab-item-container {
-    background-color: rgb(231, 37, 37);
-    height: 100%;
-    width: 50%;
-    float: inline-start;
-
+.tab-item-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f1f1f1;
+  padding: 10px;
 }
 
-div.Tab-item {
-    background-color: rgb(231, 189, 37);
-    height: 100%;
-    width: 30%;
-    display: inline-block;
+.tab-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
-div.Tab-extra {
-    background-color: rgb(254, 149, 149);
-    height: 100%;
-    width: 25%;
-    float: right
+.tab-item:hover {
+  border-bottom: 2px solid rgb(245,208,47);
+}
+
+.tab-item2 {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+.tab-item2:hover {
+  border-bottom: 2px solid rgb(137, 207, 240);
 }
 
 body {
