@@ -1,3 +1,10 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
+    background-size: 100vw 100vh;
+}
+
 h1.LOGO-MAIN {
     color: rgb(255,255,255);
     size: 200px;
@@ -7,16 +14,29 @@ h1.LOGO-MAIN {
 div.Header {
     height: 150px;
     width: 100%;
-    
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-body {
-    margin: 0%;
-    background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
-    background-size: 100vw 100vh;
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+#subTitle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #Sign-Up_Form {
@@ -24,9 +44,5 @@ body {
     margin: 10px;
     align-items: center;
     justify-content: center;
-    display: grid;
-}
-
-#title_choice {
-    font-weight: 1000;
+    display: flex;
 }

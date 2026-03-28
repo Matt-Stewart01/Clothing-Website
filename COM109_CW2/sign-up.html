@@ -4,67 +4,86 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <title>Sign-in / Register</title>
+        <link rel="icon" type="image/x-icon"  href="\COM109_CW2\Images\Mono_favicon.jpg">
+        <script src="sign-up.js"></script>
+        <title>Account creation</title>
  
     </head>
+    
     <body>
         <div class="Header">
             <h1 class="LOGO-MAIN"><b>MONO</b></h1>
         </div>
 
+        <nav class ="navbar">
+            <a href="#home"> Home </a>
+            <a href="#categories"> Categories </a>
+            <a href="#about us"> About us </a>
+            <a href="#buy"> Buy </a>
+            <a href="#contact-us"> Contact Us </a>
+        </nav>
+
         <div id="subTitle">
-            <h2>Sign-in / Register</h2>
+            <h2>Account creation</h2>
         </div>
 
         <div id="Sign-Up_Form">
-            <form action="input">
-                <div id="title_choice">
-                    <label for="title">Select title</label> <!--Turn into drop down menu-->
-                    <input type="text" name="title" required>
+            <form action="submit">
+                <div>
+                    <label for="title">Select title</label>
+                    <select name="title" id="title" required>
+                        <option value="miss">Miss</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="mr">Mr</option>
+                        <option value="mx">Mx</option>
+                        <option value="Reverend">Reverend</option>
+                        <option value="dr">Dr</option>
+                    </select>
                 </div>
                 
-                <div id="fName">
+                <div>
                     <label for="firstName">First Name</label>
-                    <input type="text" name="First Name" required>
+                    <input type="text" name="First Name" id="fName" placeholder="First name" required>
                 </div>
                 
-                <div id="lName">
+                <div>
                     <label for="lastName">Last Name</label>
-                    <input type="text" name="Last Name" required>
+                    <input type="text" name="Last Name" id="lName" placeholder="Last name" required>
                 </div>
                 
-                <div id="sign-up_email">
+                <div>
                     <label for="Email">Email</label>
-                    <input type="email" name="Email" required>
+                    <input type="email" name="Email" id="email" placeholder="Example@gmail.com" required>
                 </div>
         
-                <div id="pass">
+                <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password" required>
+                    <input type="password" name="password" id="pass" placeholder="Password" minlength="8" required>
                 </div>
                 
-                <div id="DOB">
+                <div>
                     <label for="DOB">Date of Birth</label>
-                    <input type="date" name="DOB" required>
+                    <input type="date" name="DOB" id="DOB" required>
                 </div>
 
-                <div id="con_Num">
+                <div>
                     <label for="Contact_Num">Contact Number</label>
-                    <input type="text" name="contact" required>
+                    <input type="number" name="contact" id="contact_num" placeholder="(0)-xxxx-xxx-xxx" required>
                 </div>
 
-                <div id="house_No">
+                <div>
                     <label for="house No">House No / name</label>
-                    <input type="text" name="house_No" required>
+                    <input type="text" name="house_No" id="house_No" required>
                 </div>
 
-                <div id="pCode">
+                <div>
                     <label for="PostCode">Postcode</label>
-                    <input type="text" name="post_code" required>
+                    <input type="text" name="post_code" id="pCode" required>
                 </div>
 
-                <div id="submitBtn">
-                    <button type="submit">submit</button>
+                <div>
+                    <button type="submit" id="submitBtn">submit</button>
                 </div>
 
             </form>
