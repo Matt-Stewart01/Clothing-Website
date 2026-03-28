@@ -1,3 +1,4 @@
+/*General*/
 h1.LOGO-MAIN {
     color: rgb(255,255,255);
     size: 200px;
@@ -19,6 +20,13 @@ body {
     background-size: 100vw 100vh;
 }
 
+/* homepage */
+
+/*about us*/
+
+/*Contact us*/
+
+/*sign-up form*/
 #Sign-Up_Form {
     padding: 10px;
     margin: 10px;
