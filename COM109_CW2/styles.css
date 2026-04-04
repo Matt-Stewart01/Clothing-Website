@@ -1,8 +1,11 @@
+/* General - shared across all pages*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
     background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
-    background-size: 100vw 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 h1.LOGO-MAIN {
@@ -33,16 +36,27 @@ div.Header {
     border-bottom: 1px solid var(--main-color);
 }
 
+/* sign-up page */
 #subTitle {
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
-#Sign-Up_Form {
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+/* The main body of the form */
+.sign-up-form {
+    background-color: white;
+    color: black;
+    border: 2px solid #34495e;
+}
+
+/* this is the text areas of the input fields */
+.sign-up-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #7f8c8d;
+    color: #fff; /*This is only working for the DOB*/
+}
+
+.sign-up-form .form-control::placeholder {
+    color: #bdc3c7;
 }

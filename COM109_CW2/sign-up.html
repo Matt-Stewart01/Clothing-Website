@@ -2,7 +2,12 @@
 <html lang="eng">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- boostrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+        <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="icon" type="image/x-icon"  href="\COM109_CW2\Images\Mono_favicon.jpg">
         <script src="sign-up.js"></script>
@@ -23,70 +28,77 @@
             <a href="#contact-us"> Contact Us </a>
         </nav>
 
-        <div id="subTitle">
-            <h2>Account creation</h2>
-        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    
+                    <form class="sign-up-form p-4 shadow-lg-rounded">
+                        
+                        <div id="subTitle">
+                            <h2 class="mb-4">Account creation</h2>
+                        </div>
 
-        <div id="Sign-Up_Form">
-            <form action="submit">
-                <div>
-                    <label for="title">Select title</label>
-                    <select name="title" id="title" required>
-                        <option value="miss">Miss</option>
-                        <option value="mrs">Mrs</option>
-                        <option value="ms">Ms</option>
-                        <option value="mr">Mr</option>
-                        <option value="mx">Mx</option>
-                        <option value="Reverend">Reverend</option>
-                        <option value="dr">Dr</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="First Name" id="fName" placeholder="First name" required>
-                </div>
-                
-                <div>
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="Last Name" id="lName" placeholder="Last name" required>
-                </div>
-                
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email" id="email" placeholder="Example@gmail.com" required>
-                </div>
-        
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="pass" placeholder="Password" minlength="8" required>
-                </div>
-                
-                <div>
-                    <label for="DOB">Date of Birth</label>
-                    <input type="date" name="DOB" id="DOB" required>
-                </div>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Select title</label>
+                            <select name="title" class="form-select" id="title" required>
+                                <option value="chose">Select your title</option>
+                                <option value="miss">Miss</option>
+                                <option value="mrs">Mrs</option>
+                                <option value="ms">Ms</option>
+                                <option value="mr">Mr</option>
+                                <option value="mx">Mx</option>
+                                <option value="Reverend">Reverend</option>
+                                <option value="dr">Dr</option>
+                            </select>
+                        </div>
+                                
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" name="First Name" class="form-control" id="firstName" placeholder="First name" required>
+                        </div>
+                            
+                        <div class="mb-3">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="Last Name" class="form-control" id="lastName" placeholder="Last name" required>
+                        </div>
+                            
+                        <div class="mb-3">
+                            <label for="Email">Email</label>
+                            <input type="email" name="Email" class="form-control" id="Email" placeholder="name@example.com" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" minlength="8" required>
+                        </div>
+                            
+                        <div class="mb-3">
+                            <label for="DOB">Date of Birth</label>
+                            <input type="date" name="DOB" class="form-control" id="DOB" required>
+                        </div>
 
-                <div>
-                    <label for="Contact_Num">Contact Number</label>
-                    <input type="number" name="contact" id="contact_num" placeholder="(0)-xxxx-xxx-xxx" required>
-                </div>
+                        <!-- This input type needs changed -->
+                        <div class="mb-3">
+                            <label for="contactNum">Contact Number</label>
+                            <input type="number" name="contact" class="form-control" id="contactNum" placeholder="(0)-xxxx-xxx-xxx" required>
+                        </div>
 
-                <div>
-                    <label for="house No">House No / name</label>
-                    <input type="text" name="house_No" id="house_No" required>
-                </div>
+                        <div class="mb-3">
+                            <label for="houseNo">House No / name</label>
+                            <input type="text" name="house_No" class="form-control" id="houseNo" required>
+                        </div>
 
-                <div>
-                    <label for="PostCode">Postcode</label>
-                    <input type="text" name="post_code" id="pCode" required>
-                </div>
+                        <div class="mb-3">
+                            <label for="postCode">Postcode</label>
+                            <input type="text" name="post_code" class="form-control" id="postCode" required>
+                        </div>
 
-                <div>
-                    <button type="submit" id="submitBtn">submit</button>
-                </div>
+                        <button type="submit" class="btn btn-primary w-100">submit</button>
+                        
+                    </form>
 
-            </form>
+                </div>
+            </div>
         </div>
         
     </body>
