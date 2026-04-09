@@ -19,8 +19,8 @@ div.Tab-bar {
     height: 70px;
     width: 100%;
     position: static;
-    border-top: 2px solid rgb(17, 17, 17);
-    border-bottom: 2px solid rgb(17, 17, 17);
+    border-top: 1px solid rgb(17, 17, 17);
+    border-bottom: 1px solid rgb(17, 17, 17);
 }
 
 .tab-item-container {
@@ -32,33 +32,44 @@ div.Tab-bar {
 }
 
 .tab-item {
-  padding: 20px;
+  padding: 10px 20px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  border: 2px solid transparent;
+  background-color: rgb(255, 255, 2555);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
 }
 .tab-item:hover {
-  border-bottom: 2px solid rgb(245,208,47);
-  background-color: rgb(245,208,47);
+  border-bottom: 5px solid rgb(245,208,47);
   transition: 0.3s;
 }
 
 .tab-item2 {
-  padding: 20px;
+  padding: 10px 20px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
+  border: 2px solid transparent;
+  background-color: rgb(255, 255, 2555);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
 }
 .tab-item2:hover {
-  border-bottom: 2px solid rgb(137, 207, 240);
-  background-color: rgb(137, 207, 240);
-  
+  border-bottom: 5px solid rgb(137, 207, 240);
+  transition: 0.3s;
+}
+
+.button_text {
+  color: rgb(17, 17, 17);
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;        
+  display: block;        
 }
 
 body {
