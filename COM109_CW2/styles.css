@@ -1,11 +1,12 @@
 /* General - shared across all pages*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0%;
-    background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
+    margin: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgb(245,208,47) , rgb(137, 207, 240));
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 h1.LOGO-MAIN {
@@ -22,20 +23,6 @@ div.Header {
     display: flex;
 }
 
-.navbar a{
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease-in-out;
-    border-bottom: 3px solid transparent;
-}
-
-.navbar a:hover {
-    color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
-}
-
 /* sign-up page */
 #subTitle {
     align-items: center;
@@ -44,19 +31,28 @@ div.Header {
 }
 
 /* The main body of the form */
-.sign-up-form {
+.signupForm {
     background-color: white;
     color: black;
     border: 2px solid #34495e;
 }
 
 /* this is the text areas of the input fields */
-.sign-up-form .form-control {
+.signupForm .form-control {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #7f8c8d;
-    color: #fff; /*This is only working for the DOB*/
+    color: red; /* This is only working for the DOB */
 }
 
-.sign-up-form .form-control::placeholder {
+.signupForm .form-label {
+    font-weight: bold;
+    color: #002b5c;
+}
+
+.signupForm .form-control::placeholder {
     color: #bdc3c7;
+}
+
+#fNameCheck, #lNameCheck {
+    color: red;
 }
