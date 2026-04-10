@@ -1,27 +1,20 @@
 $(document).ready(function() {
-    $("#fNameCheck, lNameCheck").show();
+    const $form = $("#signupForm");
 
-    // first name check
-    $("#firstName").on("input", function() {
-        let fName = $(this).val();
+    $form.on("submit", function(e) {
+        if(!this.checkValidity()) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
 
-        if (fName !== '') {
-            $("#fNameCheck").hide();
+        $form.addClass("was-validated");
+        });
+
+    $form.find(".form-control").on("input", function(e) {
+        if (this.checkValidity()) {
+            $(this).addClass("is-valid").removeClass("is-invalid");
         } else {
-            $("#fNameCheck").show();
+            $(this).addClass("is-invalid").removeClass("is-valid");
         }
     });
-
-    // last name check
-    $("#lastName").on("input", function() {
-        let lName = $(this).val();
-
-        if (lName !== '') {
-            $("#lNameCheck").hide();
-        } else {
-            $("#lNameCheck").show();
-        }
-    });
-
-    // email check, if empty
 });

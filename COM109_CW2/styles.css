@@ -52,7 +52,3 @@ div.Header {
 .signupForm .form-control::placeholder {
     color: #bdc3c7;
 }
-
-#fNameCheck, #lNameCheck {
-    color: red;
-}

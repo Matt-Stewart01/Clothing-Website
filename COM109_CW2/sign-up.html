@@ -29,7 +29,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-9">
                     
-                    <form class="signupForm p-4 shadow-lg rounded" name="signupForm" id="signupForm">
+                    <form class="signupForm p-4 shadow-lg rounded needs-validation" name="signupForm" id="signupForm" novalidate>
                         <div id="subTitle">
                             <h2 class="mb-4">Account creation</h2>
                         </div>
@@ -51,19 +51,19 @@
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
                             <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" required>
-                            <small id="fNameCheck">This field cannot be empty</small>
+                            <div class="invalid-feedback">Please enter your first name</div>
                         </div>
                             
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
                             <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" required>
-                            <small id="lNameCheck">This field cannot be empty</small>
+                            <div class="invalid-feedback">Please enter your last name</div>
                         </div>
                             
                         <div class="mb-3">
                             <label for="Email" class="form-label">Email</label>
                             <input type="email" name="Email" class="form-control" id="Email" placeholder="name@example.com" required autocomplete="email">
-                            <small id="lNameCheck">This field cannot be empty</small>
+                            <div class="invalid-feedback">Enter a valid email</div>
                         </div>
                         
                         <div class="mb-3">
