@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="signup for an account to get started">
+        <meta name="author" content="MONO">
+        <meta http-equiv="cache-control" content="no-cache">
         
-        <link rel="stylesheet" href="css/bootstrap.css"><!-- boostrap CSS -->
+        <link rel="stylesheet" href="bootstrap.min.css"><!-- boostrap CSS -->
         <link rel="stylesheet" type="text/css" href="styles.css"><!-- Custom CSS -->
-        <link rel="icon" type="image/x-icon"  href="/Images/Mono_favicon.jpg">
+        <link rel="icon" type="image/x-icon"  href="/Images/Mono_favicon.jpg" alt="Company Logo">
         <title>Account creation</title>
  
     </head>
@@ -17,92 +20,108 @@
         </div>
 
         <nav class ="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class = "navbar-brand" href="#home"> Home </a>
-                <a class = "navbar-brand" href="#categories"> Categories </a>
-                <a class = "navbar-brand" href="#about us"> About us </a>
-                <a class = "navbar-brand" href="#contact-us"> Contact Us </a>
+            <button id="navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="main-nav" aria-expanded="false" aria-label="navigation toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class = "nav-link" href="#home"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class = "nav-link" href="#categories"> Categories </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class = "nav-link" href="#about us"> About us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class = "nav-link" href="#contact-us"> Contact Us </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-9">
-                    
-                    <form class="signupForm p-4 shadow-lg rounded needs-validation" name="signupForm" id="signupForm" novalidate>
-                        <div id="subTitle">
-                            <h2 class="mb-4">Account creation</h2>
-                        </div>
+        <main>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        
+                        <form class="signupForm p-4 shadow-lg rounded needs-validation" name="signupForm" id="signupForm" novalidate>
+                            <div id="subTitle">
+                                <h2 class="mb-4">Account creation</h2>
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="title" class="form-label">Select title</label>
-                            <select name="title" class="form-select" id="title" required>
-                                <option value="" disabled selected>Select your title</option>
-                                <option value="miss">Miss</option>
-                                <option value="mrs">Mrs</option>
-                                <option value="ms">Ms</option>  
-                                <option value="mr">Mr</option>
-                                <option value="mx">Mx</option>
-                                <option value="Reverend">Reverend</option>
-                                <option value="dr">Dr</option>
-                            </select>
-                        </div>
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Select title</label>
+                                <select name="title" class="form-select" id="title" required>
+                                    <option value="" disabled selected>Select your title</option>
+                                    <option value="miss">Miss</option>
+                                    <option value="mrs">Mrs</option>
+                                    <option value="ms">Ms</option>  
+                                    <option value="mr">Mr</option>
+                                    <option value="mx">Mx</option>
+                                    <option value="Reverend">Reverend</option>
+                                    <option value="dr">Dr</option>
+                                </select>
+                            </div>
+                                    
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" required>
+                                <div class="invalid-feedback">Please enter your first name</div>
+                            </div>
                                 
-                        <div class="mb-3">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" required>
-                            <div class="invalid-feedback">Please enter your first name</div>
-                        </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" required>
+                                <div class="invalid-feedback">Please enter your last name</div>
+                            </div>
+                                
+                            <div class="mb-3">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" name="Email" class="form-control" id="Email" placeholder="name@example.com" required autocomplete="email">
+                                <div class="invalid-feedback">Enter a valid email</div>
+                            </div>
                             
-                        <div class="mb-3">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" required>
-                            <div class="invalid-feedback">Please enter your last name</div>
-                        </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Password" minlength="8" required autocomplete="new-password">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm password</label>
+                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="confirm password" minlength="8" required autocomplete="new-password">
+                            </div>
+                                
+                            <div class="mb-3">
+                                <label for="DOB" class="form-label">Date of Birth</label>
+                                <input type="date" name="DOB" class="form-control" id="DOB" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactNum" class="form-label">Contact Number</label>
+                                <input type="tel" name="contact" class="form-control" id="contactNum" placeholder="(0)-xxxx-xxx-xxx" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="houseNo" class="form-label">House No / name</label>
+                                <input type="text" name="house_No" class="form-control" id="houseNo" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="postCode" class="form-label">Postcode</label>
+                                <input type="text" name="post_code" class="form-control" id="postCode" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" id="submitButton">submit</button>
                             
-                        <div class="mb-3">
-                            <label for="Email" class="form-label">Email</label>
-                            <input type="email" name="Email" class="form-control" id="Email" placeholder="name@example.com" required autocomplete="email">
-                            <div class="invalid-feedback">Enter a valid email</div>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Password" minlength="8" required autocomplete="new-password">
-                        </div>
+                        </form>
 
-                        <div class="mb-3">
-                            <label for="confirmPassword" class="form-label">Confirm password</label>
-                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="confirm password" minlength="8" required autocomplete="new-password">
-                        </div>
-                            
-                        <div class="mb-3">
-                            <label for="DOB" class="form-label">Date of Birth</label>
-                            <input type="date" name="DOB" class="form-control" id="DOB" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="contactNum" class="form-label">Contact Number</label>
-                            <input type="tel" name="contact" class="form-control" id="contactNum" placeholder="(0)-xxxx-xxx-xxx" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="houseNo" class="form-label">House No / name</label>
-                            <input type="text" name="house_No" class="form-control" id="houseNo" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="postCode" class="form-label">Postcode</label>
-                            <input type="text" name="post_code" class="form-control" id="postCode" required>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100" id="mybutton">submit</button>
-                        
-                    </form>
-
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <footer class="container-fluid">
             <div class="row">
