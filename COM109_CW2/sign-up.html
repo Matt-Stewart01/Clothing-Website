@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="signup for an account to get started">
         <meta name="author" content="MONO">
-        <meta http-equiv="cache-control" content="no-cache">
         
         <link rel="stylesheet" href="bootstrap.min.css"><!-- boostrap CSS -->
         <link rel="stylesheet" type="text/css" href="styles.css"><!-- Custom CSS -->
-        <link rel="icon" type="image/x-icon"  href="/Images/Mono_favicon.jpg" alt="Company Logo">
+        <link rel="icon" type="image/x-icon"  href="/Images/Mono_favicon.webP">
         <title>Account creation</title>
- 
     </head>
     
     <body>
         <div class="Header">
-            <h1 class="LOGO-MAIN"><b>MONO</b></h1>
+            <h1 class="LOGO-MAIN"><b>MONO CLOTHING</b></h1>
         </div>
 
-        <nav class ="navbar navbar-expand-lg bg-body-tertiary">
-            <button id="navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="main-nav" aria-expanded="false" aria-label="navigation toggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse text-center" id="navbar-toggler">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class = "nav-link" href="#home"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class = "nav-link" href="#categories"> Categories </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class = "nav-link" href="#about us"> About us </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class = "nav-link" href="#contact-us"> Contact Us </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div id="navbar-wrapper" class="sticky-top">
+            <nav class ="navbar navbar-expand-lg bg-body-tertiary">
+                <button id="navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar" aria-expanded="false" aria-label="navigation toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#home"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#categories"> Categories </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#about-us"> About us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#contact-us"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <main>
-            <div class="container mt-5">
+            <div class="container mt-0">
                 <div class="row justify-content-center">
                     <div class="col-md-9">
                         
-                        <form class="signupForm p-4 shadow-lg rounded needs-validation" name="signupForm" id="signupForm" novalidate>
+                        <form class="inputForm p-4 mt-4 mb-4 shadow-lg rounded needs-validation" name="inputForm" id="inputForm" novalidate>
                             <div id="subTitle">
                                 <h2 class="mb-4">Account creation</h2>
                             </div>
@@ -64,6 +64,7 @@
                                     <option value="Reverend">Reverend</option>
                                     <option value="dr">Dr</option>
                                 </select>
+                                <div class="invalid-feedback">Please select a title</div>
                             </div>
                                     
                             <div class="mb-3">
@@ -87,31 +88,37 @@
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" name="password" class="form-control" id="password" placeholder="Password" minlength="8" required autocomplete="new-password">
+                                <div class="invalid-feedback">Please enter valid password</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="confirmPassword" class="form-label">Confirm password</label>
                                 <input type="password" name="confirmPassword" class="form-control" id="confirmPassword" placeholder="confirm password" minlength="8" required autocomplete="new-password">
+                                <div class="invalid-feedback">Those passwords do not match</div> <!--This might need changed-->
                             </div>
                                 
                             <div class="mb-3">
                                 <label for="DOB" class="form-label">Date of Birth</label>
                                 <input type="date" name="DOB" class="form-control" id="DOB" required>
+                                <div class="invalid-feedback">Please enter a date of birth</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="contactNum" class="form-label">Contact Number</label>
                                 <input type="tel" name="contact" class="form-control" id="contactNum" placeholder="(0)-xxxx-xxx-xxx" required>
+                                <div class="invalid-feedback">Please enter a valid contact number</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="houseNo" class="form-label">House No / name</label>
                                 <input type="text" name="house_No" class="form-control" id="houseNo" required>
+                                <div class="invalid-feedback">Please enter a valid house No/name</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="postCode" class="form-label">Postcode</label>
                                 <input type="text" name="post_code" class="form-control" id="postCode" required>
+                                <div class="invalid-feedback">Please enter a valid postcode</div>
                             </div>
 
                             <button type="submit" class="btn btn-primary w-100" id="submitButton">submit</button>
@@ -123,7 +130,7 @@
             </div>
         </main>
 
-        <footer class="container-fluid">
+        <footer class="main-footer container-fluid">
             <div class="row">
                 <div class="col-12 text-center">
                     <nav class="mb-3">
@@ -132,10 +139,11 @@
                     </nav>
                     <p class="text-muted small mb-0">&copy; 2026 MONO. All rights reserved.</p>
                 </div>
+            </div>
         </footer>
     
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="sign-up.js"></script>
+    <script src="jquery.js"></script>
+    <script src="sign-up.js"></script>
     </body>
 
 </html>
