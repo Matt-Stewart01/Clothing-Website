@@ -9,13 +9,18 @@ $(document).ready(function() {
     });
 
     // page variables
-    const form = $("#inputForm");
+    const form = $(".inputForm");
     const regEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
 
     // form validation for signup and contact us pages
     form.on("submit", function(event) {
+        const formID = $(this).prop("id")
         if(!this.checkValidity()) {
             event.preventDefault();
+        } else if (formID === "contactForm") { // checks for form ID on successful submission
+            alert("Your message was successfully sent!")
+        } else if (formID === "signupForm") { // checks for form ID on successful submission
+            alert("Your account was successfully created!")
         }
 
         form.addClass("was-validated");
@@ -28,8 +33,6 @@ $(document).ready(function() {
                 $(this).addClass("is-invalid").removeClass("is-valid");
             }
         });
-
-        alert("account succefully created")
     });
     
     // email regEx
