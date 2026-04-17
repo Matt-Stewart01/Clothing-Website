@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="page to contact the company">
+        <meta name="author" content="MONO">
+
+        <link rel="stylesheet" href="bootstrap.min.css"><!-- boostrap CSS -->
+        <link rel="stylesheet" type="text/css" href="styles.css"><!-- Custom CSS -->
+        <link rel="icon" type="image/x-icon"  href="/Images/Mono_favicon.webP">
+        <title>Contact Us</title>
+    </head>
+
+    <body>
+        <div class="Header">
+            <h1 class="LOGO-MAIN">MONO  <span>CLOTHING</span></h1>
+        </div>
+
+        <!-- navbar -->
+         <div id="navbar-wrapper" class="sticky-top">
+            <nav class ="navbar navbar-expand-lg bg-body-tertiary">
+                <button id="navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar" aria-expanded="false" aria-label="navigation toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class = "nav-link" href="home"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="categories"> Categories </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="about-us"> About us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="sign-up.html"> Sign-up </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- The form field -->   
+        <main>
+            <div class="container mt-0">
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        
+                        <form class="inputForm p-4 mt-4 mb-4 shadow-lg rounded needs-validation" name="inputForm" id="inputForm" novalidate>
+                            <div id="subTitle">
+                                <h2 class="mb-4">Contact Us</h2>
+                            </div>
+                                    
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name" required>
+                                <div class="invalid-feedback">Please enter your first name</div>
+                            </div>
+                                
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name" required>
+                                <div class="invalid-feedback">Please enter your last name</div>
+                            </div>
+                                
+                            <div class="mb-3">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" name="Email" class="form-control" id="Email" placeholder="name@example.com" required autocomplete="email">
+                                <div class="invalid-feedback">Enter a valid email</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactNum" class="form-label">Contact Number</label>
+                                <input type="tel" name="contact" class="form-control" id="contactNum" placeholder="(0)-xxxx-xxx-xxx" required>
+                                <div class="invalid-feedback">Please enter a valid contact number</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactMsg" class="form-label">your message</label>
+                                <textarea class="form-control" name="contactMsg" id="contactMsg" rows="3" placeholder="Your message" required></textarea>
+                                <div class="invalid-feedback">Please enter a message</div>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100" id="submitButton">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="map-wrapper">
+                <h3>Our Location</h3>
+                <div class="ratio ratio-16x9 mb-2">
+                    <iframe title="companyLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2310.963638840043!2d-5.9316798239542265!3d54.604633179837606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861084ca01b3ccd%3A0xf36a06a9666eabcc!2sUlster%20University!5e0!3m2!1sen!2suk!4v1776355851110!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class=" main-footer container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <nav class="mb-3">
+                        <a href="#about-us" class="text-dark text-decoration-none mx-3 fw-bold">about us</a>
+                        <a href="#contact-us" class="text-dark text-decoration-none mx-3 fw-bold">contact us</a>
+                    </nav>
+                    <p class="text-muted small mb-0">&copy; 2026 MONO. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="jquery.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
