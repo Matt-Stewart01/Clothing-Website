@@ -3,41 +3,103 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <title>MONO</title>
 
+
+        <link rel="stylesheet" type="text/css" href="styles copy.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href = "Images/Mono_favicon.webP">
         
     </head>
     <body>
         <div class="Header">
-            <h1 class="LOGO-MAIN"><b>MONO</b></h1>
+            <h1 class="LOGO-MAIN"><b>MONO CLOTHING</b></h1>
 
         </div>
-        <div class="Tab-bar">
-
-            <div class="tab_searchbar">
-
-            </div>
-            
-            <div class="tab-item-container">
-                <button type="button" class="tab-item">
-                    <span class="button_text">MEN</span>
+        <div id="navbar-wrapper" class="sticky-top">
+            <nav class ="navbar navbar-expand-lg bg-body-tertiary">
+                <button id="navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar" aria-expanded="false" aria-label="navigation toggle">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <button type="button" class="tab-item2">
-                    <span class="button_text">WOMEN</span>
-                </button>
-                <button type="button" class="tab-item">
-                    <span class="button_text">CHILDREN</span>
-                </button>
-                
-                
-            </div>
-            <div class="tab-item-container">
-                
+               
+                <div class="collapse navbar-collapse text-center" id="navbar-toggler">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#home"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#categories"> Categories </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#about-us"> About us </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class = "nav-link" href="#contact-us"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="aboutus_title">
+                About MONO. The number one upcoming summer clothing brand..
             </div>
 
-        <div
+            <div>
+                <img src="Images/Lady-sitting-at-beach.webp" alt="Lady wearing mono clothing sitting at the beach">
+            </div>
+
+            <div>
+                Description
+            </div>
+
+            <div class="aboutus_title">
+                The History of MONO
+            </div>
+
+
+            <div class="Container">
+                <div class="aboutus_left-box">
+                    <div class="timeline-item Selectable-Card" id="parent-event1" onclick="toggleDetails('event1')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h5>2017: Project Startup</h5>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item Selectable-Card" id="parent-event2" onclick="toggleDetails('event2')">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h5>2017: Our First Product</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sticky-top aboutus_right-box" style="top: 62px; z-index: 1010;">
+                    <div id="event1" class="details">
+                        HELLO
+                    </div>
+                    <div id="event2" class="details">
+                        JELLO
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <nav class="mb-3">
+                        <a href="#about-us" class="text-dark text-decoration-none mx-3 fw-bold">about us</a>
+                        <a href="#contact-us" class="text-dark text-decoration-none mx-3 fw-bold">contact us</a>
+                    </nav>
+                    <p class="text-muted small mb-0">&copy; 2026 MONO. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
         
+        <script src="jquery.js"></script>
+        <script src="About-us.js"></script>
     </body>
 
 </html>
