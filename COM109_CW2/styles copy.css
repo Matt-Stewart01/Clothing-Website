@@ -88,8 +88,9 @@ h1.LOGO-MAIN {
 
 .aboutus_left-box {
     flex: 1;
-    height: 1000px;
+    height: 700px;
     width: 50%;
+    border-right: 2px solid rgb(245,208,47);
 
 }
 
@@ -97,7 +98,8 @@ h1.LOGO-MAIN {
     flex: 1;
     height: 400px;
     width: 50%;
-    border: 2px solid #7f8c8d;
+    padding: 20px 20px;
+    font-size: 20px;
 }
 
 .timeline-item {
@@ -107,7 +109,7 @@ h1.LOGO-MAIN {
 }
 
 .timeline-dot {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     background-color: white;
@@ -124,12 +126,10 @@ h1.LOGO-MAIN {
 
 
 .timeline-content {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    padding-left: 60px;
-    margin-left: 10px;
 }
 
 .Selectable-Card {
@@ -152,12 +152,35 @@ h1.LOGO-MAIN {
 
 .aboutus_title {
     padding: 20px 20px;
-    height: 150px;
-    margin-left: 100px;
+    text-align: center;
     font-size: 40px;
 }
 
 .aboutus_title-image {
     width: 100%;
-    height: 200px;
+    height: 650px;
+}
+
+.body-text {
+    font-size: 20px;
+    padding: 60px 60px;
+    border-bottom: 2px solid rgb(137, 207, 240);
+}
+
+.image-text {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 20px;
+    border-bottom: 2px solid rgb(137, 207, 240);
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    allowfullscreen: true;
+    loading: lazy; 
+    referrerpolicy: no-referrer-when-downgrade;
+    position: relative;
 }
