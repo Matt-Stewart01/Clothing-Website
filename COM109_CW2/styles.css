@@ -1,40 +1,190 @@
-/*General*/
-h1.LOGO-MAIN {
-    color: rgb(255,255,255);
-    size: 200px;
-    text-align: center;
+/* General - shared across all pages*/
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    background-color: white;
 }
 
 div.Header {
+    background-image: linear-gradient(to top, rgb(245,208,47) , rgb(137, 207, 240));
     height: 150px;
     width: 100%;
-    
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-body {
-    margin: 0%;
-    background-image: linear-gradient(to Top, rgb(245,208,47) , rgb(137, 207, 240));
-    background-size: 100vw 100vh;
+h1.LOGO-MAIN {
+    color: rgb(255,255,255);
+    text-align: center;
 }
 
-/* homepage */
+.navbar {
+    font-size: 20px;
+}
 
-/*about us*/
+.navbar a:hover {
+    background-color: rgb(137, 207, 240);
+}
 
-/*Contact us*/
+.main-footer {
+    background-image: linear-gradient(to top, rgb(245,208,47) , rgb(137, 207, 240));
+}
 
-/*sign-up form*/
-#Sign-Up_Form {
-    padding: 10px;
-    margin: 10px;
+
+/* sign-up page */
+#subTitle {
     align-items: center;
     justify-content: center;
-    display: grid;
+    display: flex;
 }
 
-#title_choice {
-    font-weight: 1000;
+/* The main body of the form */
+.inputForm {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(137, 207, 240);
+}
+
+/* this is the text areas of the input fields */
+.inputForm .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #7f8c8d;
+    color: black;
+}
+
+.form-select {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #7f8c8d;
+    color: black;
+}
+
+.inputForm .form-label {
+    font-weight: bold;
+    color: #002b5c;
+}
+
+.inputForm .form-control::placeholder {
+    color: #75828a;
+}
+
+
+/* contact-us page */
+#map-wrapper {
+    background-color: rgb(230, 230, 230);
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* About-us page */
+.Container {
+    padding: 0%;
+    display: flex;
+    
+}
+
+.aboutus_left-box {
+    flex: 1;
+    height: 700px;
+    width: 50%;
+    border-right: 2px solid rgb(245,208,47);
+
+}
+
+.aboutus_right-box {
+    flex: 1;
+    height: 400px;
+    width: 50%;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    padding: 10px 40px;
+    border-bottom: 2px solid rgb(245,208,47);
+}
+
+.timeline-dot {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 3px solid rgb(137, 207, 240);
+    margin: 5px 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.active-item .timeline-dot {
+  background-color: rgb(245,208,47) !important;
+  border-color: rgb(245,208,47) !important;
+}
+
+
+.timeline-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Selectable-Card {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Selectable-Card:hover {
+  background-color: #dddddd;
+}
+
+.details { 
+    display: none; 
+    opacity: 0;
+}
+.details.show { 
+    display: block !important;
+    opacity: 1;
+}
+
+.aboutus_title {
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aboutus_title-image {
+    width: 100%;
+    height: 650px;
+}
+
+.body-text {
+    font-size: 20px;
+    padding: 60px 60px;
+    border-bottom: 2px solid rgb(137, 207, 240);
+}
+
+.image-text {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    padding: 20px 20px;
+    border-bottom: 2px solid rgb(137, 207, 240);
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    allowfullscreen: true;
+    loading: lazy; 
+    referrerpolicy: no-referrer-when-downgrade;
+    position: relative;
 }
